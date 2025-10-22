@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        button{
+             background: none;
+          
+                 cursor: pointer;
+      border: none;
+        }
+#texto{
+    display: none;
+}
+    </style>
+    <link rel="icon" href="https://wx.mlcdn.com.br/site/desk/header/lu-logo-avatar.png">
+</head>
+
+<body>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <div class="container mt-4">
+        <div class="row align-items-start">
+            <div class="col-md-6 text-start">
+                <h2 class="">Samsung galaxy 25 ultra</h2>
+                <div class="card" style="width:22rem;">
+                    <img src="download.webp" class="card img-fluid img-thumbnail shadow">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card text-white border-primary p-0 mt-5" style="width: 28rem;">
+                    <div class="card-header bg-primary mb-0">Descriça do produto</div>
+                    <div class="card-body text-black">
+                        <h6 class="card-text">
+                            O Samsung Galaxy S25 Ultra é um smartphone<h6 id="texto"></h6></h6>
+                    </div>
+                    <button onclick="a()" id=""><h6  id="b" style="color: blue;">ver mais</h6></button>
+                </div>
+                <div class="mt-1">
+                    <img src="cartao.jpg" width="50%" class="me-3 d-block">
+                </div>
+                <div class="mt-1">
+                    <h2>R$6.699,00</h2>
+                    <a href="#" class="btn btn-success ">comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item "><a class="nav-link" data-bs-toggle="tab" href="#abafoto">Foto</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#abavideo">Video</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#comentarios">Comentarios</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="abafoto" class="tab-pane fade">
+                <div class="card-body mx-5">
+                    <img src="Celular.jpg" class="card-img-fluid img-thumbnail shadow-lg col-md-2">
+                    <img src="Celular2.jpeg" class="card-img-fluid img-thumbnail shadow-lg col-md-2 mx-2 ">
+                </div>
+            </div>
+            <div id="abavideo" class="tab-pane fade mt-4 mx-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SontFRz6fGc?si=iI4A9kmLInK4gIDA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div id="comentarios" class="tab-pane fade">
+                <div class="card-body">
+                    <h6 class="">⭐⭐⭐⭐⭐</h6>
+                </div>
+                <h6 class="text-black align-items-start">⭐muito caro</h6>
+                <h6 class="text-black align-items-start">⭐⭐não gostei,trava muito</h6>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function a() {
+            let botao = document.getElementById("b");
+             let adicionartexto = document.getElementById("texto");
+           
+            
+              if (adicionartexto.style.display === 'none' ||  adicionartexto.style.display === '') 
+              {
+                  botao.textContent="ver menos"
+            adicionartexto.textContent="superpotente,tela grande e resistente.Por dentro, é extremamente rápido.O sistema de câmeras é o seu ponto forte, com uma principal de 200 MP e outras lentes que oferecem zoom de alta qualidade.a bateria dura o dia todo e ainda vem com a caneta S Pen embutida.";
+                 texto.style.display = 'block'; 
+              }
+              else
+              {
+                        texto.style.display = 'none'; 
+                         botao.textContent="ver mais";
+                         adicionartexto.textContent='';
+              }
+ 
+
+
+        }
+        
+    </script>
+</body>
+
+</html>
